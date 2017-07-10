@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>PHP 101</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/styles.css" rel="stylesheet">
+  </head>
+  <body>
+    <nav class="navbar navbar-inverse">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle collapsed" data-toggle="collapse" data-target="#nav_dropdown">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">PHP 101</a>
+        </div>
+        <div class="collapse navbar-collapse" id="nav_dropdown">
+
+          <ul class="nav navbar-nav navbar-right">
+
+            <!-- DO THIS LAST -->
+
+            <!-- Loop through $menu to display top level menu -->
+
+            <li><a href="/about">About</a></li>
+            <li><a href="/news">News</a></li>
+
+            <!-- You will have to figure out what to do here and how to display the secondary links -->
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown">Online Store <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+
+                <!-- The secondary links -->
+                <li><a href="/widgets">Widgets</a></li>
+                <li><a href="/gizmos">Gizmos</a></li>
+                <li><a href="/doohickeys">Action</a></li>
+              </ul><!-- /.dropdown-menu -->
+            </li>
+            <li><a href="/reviews">Reviews</a></li>
+            <li><a href="/contact">Contact</a></li>
+
+            <!-- end of loop -->
+
+          </ul><!-- /.navbar-nav -->
+
+        </div><!-- /.navbar-collapse -->
+      </div><!-- /.container-fluid -->
+    </nav><!-- /.navbar -->
+
+    <div class="jumbotron">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+
+
+
+
+
+            <!-- Do this first, just echo the valuse from  $jumbotron-->
+
+            <h1>Hello, world!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum quibusdam, deserunt sunt perferendis molestiae nesciunt dicta consequatur officia, minus veniam accusantium soluta, voluptatibus placeat, optio. Iste ipsa ratione aut.</p>
+
+
+
+
+
+          </div><!-- /.col-md-6 -->
+          <div class="col-md-6">
+
+            <ul class="list-group">
+
+
+
+
+
+
+
+
+              <!-- loop through $jumbotron_list -->
+
+              <li class="list-group-item">This is the first item</li>
+              <li class="list-group-item">This should be the second</li>
+              <li class="list-group-item">If this isn't third there's a problem</li>
+              <li class="list-group-item">But at this point they should all be working</li>
+              <li class="list-group-item">Because that's just how it goes</li>
+
+              <!-- end loop -->
+
+
+
+            </ul><!-- /.list-group -->
+
+          </div><!-- /.col-md-6 -->
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </div><!-- /.jumbotron -->
+
+    <section>
+      <div class="container">
+        <h2>The Latest</h2>
+        <div class="row">
+
+        <!-- Another loop, this time $latest, $latest will return arrays where you need to get the values from -->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="assets/images/placeholder1.jpg">
+              <div class="caption">
+                <h3>Who's a Good Boy</h3>
+                <p class="author"><a href="/author/john-smith">John Smith</a></p>
+                <p>Itaque quas consequatur eaque maiores, recusandae molestiae quibusdam ea modi ratione ut, quisquam sapiente blanditiis eveniet placeat voluptate minima et ab nemo</p>
+                <p><a href="#" class="btn btn-primary" role="button">Read More</a></p>
+              </div>
+            </div><!-- /.thumbnail -->
+          </div><!-- /.col -->
+
+
+          <!-- end loop but delete the other two below -->
+
+
+
+
+
+
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="assets/images/placeholder2.jpg">
+              <div class="caption">
+                <h3>Drinking Green Water</h3>
+                <p class="author"><a href="/author/jane-stevens">Jane Stevens</a></p>
+                <p>Soluta, ullam, voluptas fugiat, porro laboriosam cum autem dolore reiciendis id modi animi harum saepe dolores sapiente, iure atque sequi corrupti</p>
+                <p><a href="#" class="btn btn-primary" role="button">Read More</a></p>
+              </div>
+            </div><!-- /.thumbnail -->
+          </div><!-- /.col -->
+
+          <div class="col-sm-6 col-md-4">
+            <div class="thumbnail">
+              <img src="assets/images/placeholder3.jpg">
+              <div class="caption">
+                <h3>Nope Nope Nope, Turn Around</h3>
+                <p class="author"><a href="/author/rick-jones">Rick Jones</a></p>
+                <p>Quae mollitia, impedit laudantium minus ipsam aliquid animi veniam aperiam, modi voluptate natus in deserunt, consectetur quas. Ducimus eveniet aliquam reprehenderit</p>
+                <p><a href="#" class="btn btn-primary" role="button">Read More</a></p>
+              </div>
+            </div><!-- /.thumbnail -->
+          </div><!-- /.col -->
+
+
+        </div><!-- /.row -->
+      </div><!-- /.container -->
+    </section>
+
+
+    <script src="assets/js/jquery.min.js"></script>
+    <script src="assets/js/bootstrap.min.js"></script>
+  </body>
+</html>
